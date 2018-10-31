@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa9a535-400f-4173-b623-81da0a06f0ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/base/stone/Stone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/stone/StoneSummon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/stone/StoneType1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/stone/StoneType2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/stone/StoneType3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/stone/StoneType4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/Background.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/Settings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/enemy/EnemyBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/game/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/enemy/EnemyBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ci-begin-master/base/player/Player.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,22 +177,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="880" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="880" />
+          <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/GameCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="91">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,10 +202,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/stone/Stone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="403">
               <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -259,7 +241,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/stone/StoneSummon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="293">
               <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -507,7 +489,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540960774670" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540962098091" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ci-begin-demo" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -603,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538310220783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Game battle ship 1">
+      <created>1540960870395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540960870395</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -652,7 +641,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Game battle ship 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game battle ship 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,16 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/GameCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/stone/StoneType3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -962,9 +942,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/stone/Stone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/stone/StoneSummon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="293">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -972,10 +962,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/stone/Stone.java">
+    <entry file="file://$PROJECT_DIR$/src/game/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="91">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
