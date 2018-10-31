@@ -4,6 +4,7 @@ import base.*;
 import base.enemy.Enemy;
 import base.enemy.EnemyType1;
 import base.player.Player;
+import base.stone.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,9 +15,23 @@ public class GameCanvas extends JPanel {
 
     //Hàm khởi tạo GameCanvas
     public GameCanvas() {
+        int x = 130;
+        int y = -1500;
         this.background = GameObject.recycle(Background.class); //Background
         this.player = GameObject.recycle(Player.class); //Player
-        EnemyType1 enemy = GameObject.recycle(EnemyType1.class); //Enemy
+        //StoneType1 type1 = GameObject.recycle(StoneType1.class);
+        StoneType2 type2 = GameObject.recycle(StoneType2.class);
+        type2.position.set(160,-500) ;
+        for (int i = 0; i < 4; i++) {
+            StoneType2 type21 = GameObject.recycle(StoneType2.class);
+            type21.position.set(x,y);
+            x+=80;
+            y-=300;
+        }
+        StoneType3 type3  = GameObject.recycle(StoneType3.class);
+        StoneType4 type4 = GameObject.recycle(StoneType4.class);
+        StoneSummon enemy = GameObject.recycle(StoneSummon.class);
+
     }
 
     //Run: hàm để Update even khi có thay đổi về số liệu  (x += 1)

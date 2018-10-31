@@ -56,17 +56,7 @@ public class GameWindow extends JFrame {
 //            }
 //        });
 
-        this.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(MouseEvent e) {
-                MouseManager.mouseManager.mousePressed(e);
-            }
 
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                MouseManager.mouseManager.mouseRelease(e);
-            }
-        });
 
         this.addKeyListener(new KeyAdapter() {
             @Override
@@ -99,6 +89,17 @@ public class GameWindow extends JFrame {
                 if(e.getKeyCode() == KeyEvent.VK_D) {
                     KeyEventPress.isRightPress = false;
                 }
+            }
+        });
+        this.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                MouseManager.mouseManager.mousePressed(e);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                MouseManager.mouseManager.mouseRelease(e);
             }
         });
     }

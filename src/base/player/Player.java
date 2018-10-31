@@ -38,7 +38,7 @@ public class Player extends GameObject implements Physics {
             VY -= 1;
         }
         if(KeyEventPress.isDownPress) {
-            VY += 1;
+            VY += 3;
         }
         if(KeyEventPress.isRightPress) {
             VX += 1;

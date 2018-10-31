@@ -86,7 +86,9 @@ public class GameObject {
         this.isActive = true;
         this.anchor = new Vector2D(0.5f, 0.5f);
     }
+    public void setPosition(){
 
+    }
     public void destroy() {
         this.isActive = false;
     }
