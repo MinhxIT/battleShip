@@ -6,6 +6,8 @@ import base.event.KeyEventPress;
 import base.event.MouseManager;
 import base.physics.BoxCollider;
 import base.physics.Physics;
+import base.stone.Stone;
+import base.stone.StoneType1;
 import tklibs.SpriteUtils;
 
 import java.awt.image.BufferedImage;
@@ -30,31 +32,58 @@ public class Player extends GameObject implements Physics {
         this.velocity = new Vector2D(0, 0);
     }
 
+
     @Override
     public void run() {
+        int x = (int) this.position.x;
+        int y = (int) this.position.y;
         int VX = 0;
         int VY = 0;
-        if(KeyEventPress.isUpPress) {
+        if (KeyEventPress.isUpPress) {
             VY -= 1;
         }
-        if(KeyEventPress.isDownPress) {
-            VY += 3;
+        if (KeyEventPress.isDownPress) {
+            if (y > Settings.SCREEN_HEIGHT) {
+                VY = 0;
+                VX = 0;
+            } else {
+                VY += 6;
+            }
         }
-        if(KeyEventPress.isRightPress) {
+        if (KeyEventPress.isRightPress) {
             VX += 1;
         }
-        if(KeyEventPress.isLeftPress) {
+        if (KeyEventPress.isLeftPress) {
             VX -= 1;
         }
         this.move(VX, VY);
         //fire
         boolean fireCounterRun = this.fireCounter.run();
-        if(MouseManager.mouseManager.isPressed && fireCounterRun) {
-            bulletVelocity.set(MouseManager.mouseManager.position.x - this.position.x, MouseManager.mouseManager.position.y - this.position.y );
+        if (MouseManager.mouseManager.isPressed && fireCounterRun) {
+            bulletVelocity.set(MouseManager.mouseManager.position.x - this.position.x, MouseManager.mouseManager.position.y - this.position.y);
             this.fire(bulletVelocity.normalize().scaleThis(3));
+        }
+
+        if (this.position.x <= 85){
+            this.position.x = 85;
+        }
+        if (this.position.x >= 415){
+            this.position.x = 415;
+        }
+        if (this.position.y >= 520){
+            this.position.y = 520;
+        }
+        if (this.position.y <= 50){
+            this.position.y = 50;
+        }
+        StoneType1 type1 = GameObject.intersect(StoneType1.class,this);
+        Background background;
+        if (type1!=null){
+            this.destroy();
         }
         this.position.addThis(this.velocity);
     }
+
 
     public void fire(Vector2D velocity) {
 
@@ -68,7 +97,7 @@ public class Player extends GameObject implements Physics {
     }
 
     public void move(int velocityX, int velocityY) {
-        if(velocityX == 0 && velocityY == 0) {
+        if (velocityX == 0 && velocityY == 0) {
             this.velocity.set(0, 0);
         } else {
             this.velocity.addThis(velocityX, velocityY);
@@ -83,7 +112,7 @@ public class Player extends GameObject implements Physics {
 
     public void takeDamage(int damage) {
         this.hp -= damage;
-        if(this.hp <= 0) {
+        if (this.hp <= 0) {
             this.destroy();
             hp = 0;
         }

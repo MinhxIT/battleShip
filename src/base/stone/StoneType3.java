@@ -9,6 +9,6 @@ public class StoneType3 extends Stone {
         super();
         this.collider = new BoxCollider(183,161);
         this.renderer = new SingleImageRenderer("assets/images/stone/rock2.png");
-        this.position = new Vector2D(295,-860);
+
     }
 }

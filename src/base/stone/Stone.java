@@ -18,7 +18,7 @@ public class Stone extends GameObject implements Physics {
     public void setPosition() {
         super.setPosition();
         //
-        this.position= new Vector2D(new Random().nextInt(370),0 );
+       // this.position= new Vector2D(new Random().nextInt(370),0 );
     }
 
     @Override

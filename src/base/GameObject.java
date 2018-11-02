@@ -2,6 +2,7 @@ package base;
 
 import base.physics.Physics;
 import base.renderer.Renderer;
+import base.stone.StoneSummon;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -56,6 +57,7 @@ public class GameObject {
     }
 
     public static void runAll() {
+        int dem = 0;
         for(GameObject go : gameObjects) {
             if(go.isActive) {
                 go.run();

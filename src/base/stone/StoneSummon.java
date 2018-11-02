@@ -7,14 +7,18 @@ import base.action.Action;
 import base.action.ActionRepeat;
 import base.action.ActionSequence;
 import base.action.ActionWait;
+import base.counter.FrameCounter;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class StoneSummon extends GameObject {
     Action action;
-    ArrayList<Stone> arr = new ArrayList<>();
-    int i=0;
+    //ArrayList<Stone> arr = new ArrayList<>();
+    int i = 0;
+    public boolean isEnd;
+
+    //FrameCounter frameCounter = new FrameCounter(10);
 
     public StoneSummon() {
 //        ArrayList<BufferedImage> images = SprssssssaasssssaddddddddwiteUtils.loadImages(""
@@ -23,7 +27,7 @@ public class StoneSummon extends GameObject {
     }
 
     public void createStones() {
-        ActionWait actionWait = new ActionWait(100);
+        ActionWait actionWait = new ActionWait(50);
         Action actionFire = new Action() {
             @Override
             public void run(GameObject master) {
@@ -42,17 +46,16 @@ public class StoneSummon extends GameObject {
     }
 
     public void createStone() {
-            Stone stoneType1 = GameObject.recycle(StoneType1.class);
-            stoneType1.position.set(Settings.START_STONE_POSITION_X,Settings.START_STONE_POSITION_Y);
-            Settings.START_STONE_POSITION_Y = Settings.START_STONE_POSITION_Y-140+new Random().nextInt(100);
-            Settings.START_STONE_POSITION_X = Settings.START_STONE_POSITION_X+(new Random().nextInt(30)-new Random().nextInt(30));
-            this.arr.add(stoneType1);
-
+        StoneType1 stoneType1 = GameObject.recycle(StoneType1.class);
+        stoneType1.position.set(
+                Settings.START_STONE_POSITION_X - 200 + new Random().nextInt(200),
+                Settings.START_STONE_POSITION_Y - 350 + new Random().nextInt(100));
     }
 
     @Override
     public void run() {
-        this.action.run(this);
-
+        if (!isEnd) {
+            this.action.run(this);
+        }
     }
 }
